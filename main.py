@@ -11,3 +11,5 @@ cleaner = Cleaner(  reference = reference,
                     output_path = output_path                    
 )
 
+
+cleaner.call_bowtie()
