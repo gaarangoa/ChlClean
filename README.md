@@ -9,14 +9,13 @@ This is a simple tool that removes all 16s rRNAs-like reads from a paired-end sa
 
 ### Instalation
 
-#### Create a virtual environment
-virtualenv venv
-source ./venv/bin/activate
-
-pip install numpy
-pip install qiime
+python setup.py install
+pip install . --upgrade
 
 ### Usage
 
+clremove clear --paired-1 ./test/r1.fq --paired-2 ./test/r2.fq --out-dir ./test/
 
+### output files
 
+The files with filtered chloroplast reads are stored as *.no-chl.fastq
