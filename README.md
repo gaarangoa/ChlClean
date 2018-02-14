@@ -13,7 +13,16 @@ Make sure you have installed the following software (packages):
 <!-- pip install . --upgrade -->
 
 ### Usage
+    usage: chloroplast-clear clear [-h] --paired-1 PAIRED_1 --paired-2 PAIRED_2
+                               --out-dir OUT_DIR
 
+    optional arguments:
+    -h, --help           show this help message and exit
+    --paired-1 PAIRED_1  paired read 1
+    --paired-2 PAIRED_2  paired read 2
+    --out-dir OUT_DIR    output directory
+
+#### Usage example
     clremove clear --paired-1 ./test/r1.fq --paired-2 ./test/r2.fq --out-dir ./test/
 
 ### output files
