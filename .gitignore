@@ -1,2 +1,6 @@
-ggenes/99_otus.fasta
+ChlClean/ggenes/99_otus.fasta
 .sonarlint
+*.pyc
+dist/
+/*.egg-info
+/*.egg
