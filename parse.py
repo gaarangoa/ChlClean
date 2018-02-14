@@ -22,7 +22,7 @@ def parse_sam(fi='', identity=80, coverage=25, fox=''):
         read_identity = alignlen/matchedbp
         if read_identity < identity: continue
         if matchedbp < coverage: continue
-        fo.write(line)
+        fo.write(values[0]+"\n")
     
     fo.close()
         
