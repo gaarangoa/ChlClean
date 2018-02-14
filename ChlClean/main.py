@@ -4,7 +4,7 @@ import pkg_resources
 
 
 def process(args):
-    print('loading reference: ', pkg_resources.resource_filename(__name__, 'ggenes/gg_chloroplasts'))
+    # print('loading reference: ', pkg_resources.resource_filename(__name__, 'ggenes/gg_chloroplasts'))
     cleaner = Cleaner(  reference = pkg_resources.resource_filename(__name__, 'ggenes/gg_chloroplasts'), 
                         paired_1 = args.paired_1,
                         paired_2 = args.paired_2,
