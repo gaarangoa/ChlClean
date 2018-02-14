@@ -16,7 +16,7 @@ class Cleaner():
         # assumes bowtie is installed in your machine
         cmd=" ".join([
             'bowtie2', 
-            '--fast-local --no-discordant -p ', self.cores,
+            '--fast-local --no-discordant -p ', str(self.cores),
             ' --no-unal --no-hd --no-sq -x ', self.reference, 
             '-1', self.paired_1, 
             '-2', self.paired_2, 
