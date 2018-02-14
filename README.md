@@ -24,7 +24,9 @@ Make sure you have installed the following software (packages):
     --out-dir OUT_DIR    output directory
 
 #### Usage example
-    clremove clear --paired-1 ./test/r1.fq --paired-2 ./test/r2.fq --out-dir ./test/
+The directory ./test/ contains a set of files that can be used to check if the program works
+
+    chfilter remove --paired-1 ./test/r1.fq --paired-2 ./test/r2.fq --out-dir ./test/
 
 ### output files
 The files with filtered chloroplast reads are stored as 
