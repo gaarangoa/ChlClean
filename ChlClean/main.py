@@ -14,7 +14,7 @@ def process(args):
     cleaner.process()
 
 def main():
-    parser = argparse.ArgumentParser(prog="chloroplast-clear", description="welcome to cloroplast clear program")
+    parser = argparse.ArgumentParser(prog="chlorofilter", description="welcome to cloroplast clear program")
     subparsers = parser.add_subparsers(help="type the command name for help", title="commands", description="valid subcomands")
     
     # parser for the motif2json utility
