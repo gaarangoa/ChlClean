@@ -1,10 +1,3 @@
-"""A setuptools based setup module.
-
-See:
-https://packaging.python.org/en/latest/distributing.html
-https://github.com/pypa/sampleproject
-"""
-
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
 # To use a consistent encoding
@@ -23,13 +16,13 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.0',
+    version='1.3',
 
-    description='This program predicts the gene expression level of a sequence',
+    description='Simple instructions to remove 16s rRNA reads from metagenomics samples',
     long_description=long_description,
 
     # The project's main homepage.
-    url='',
+    url='https://github.com/gaarangoa/chfilter',
 
     # Author details
     author='Gustavo Arango',
@@ -37,7 +30,7 @@ setup(
     include_package_data=True,
 
     # Choose your license
-    license='MIT',
+    license='BSD-2',
 
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
@@ -45,14 +38,15 @@ setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 1 - Alpha',
+        'Development Status :: 4 - Beta',
+        # 'Environment :: Console (Text Based)',
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
-        'Topic :: Software Development :: Build Tools',
+        # 'Topic :: Bioinformatics :: Metagenomics',
 
         # Pick your license as you wish (should match "license" above)
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: BSD License',
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.

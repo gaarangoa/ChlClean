@@ -9,11 +9,13 @@ Make sure you have installed the following software (packages):
 
 ### Instalation
 
-    python setup.py install
+    pip install chfilter --user
+
+<!-- python setup.py install -->
 <!-- pip install . --upgrade -->
 
 ### Usage
-    usage: chloroplast-clear clear [-h] --paired-1 PAIRED_1 --paired-2 PAIRED_2 --out-dir OUT_DIR
+    usage: chfiler remove [-h] --paired-1 PAIRED_1 --paired-2 PAIRED_2 --out-dir OUT_DIR
 
     optional arguments:
     -h, --help           show this help message and exit
