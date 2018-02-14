@@ -38,5 +38,5 @@ class Cleaner():
     
     def process(self):
         listf = self.call_bowtie()
-        retrieve(fi = self.paired_1, listf)
+        retrieve(fi = self.paired_1, listf=listf)
 
