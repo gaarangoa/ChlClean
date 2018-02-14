@@ -1,5 +1,6 @@
 from parse import parse_sam
 from Bio.SeqIO.QualityIO import FastqGeneralIterator
+import os
 
 class Cleaner():
 
@@ -28,6 +29,7 @@ class Cleaner():
         return listf
 
     def retrive(self, fi='', listf={}):
+        fo = open(fi+".no-chl.fastq", "w")
         for _id,seq,qual in FastqGeneralIterator(open(fi)):
             header = _id.split(' ')[0] 
             read = '@%s\n%s\n+\n%s' %(_id, seq, qual)
@@ -37,6 +39,8 @@ class Cleaner():
                 fo.write(read+"\n")
     
     def process(self):
+        self.call_bowtie()
         listf = self.call_bowtie()
-        retrieve(fi = self.paired_1, listf=listf)
+        self.retrive(fi = self.paired_1, listf=listf)
+        self.retrive(fi = self.paired_2, listf=listf)
 

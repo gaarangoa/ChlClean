@@ -1,9 +1,9 @@
 from remove_cloroplasts import Cleaner
 
 reference = "./ggenes/gg_chloroplasts"
-paired_1 = 'r1.fq'
-paired_2 = 'r2.f1'
-output_path = '.'
+paired_1 = './test/r1.fq'
+paired_2 = './test/r2.fq'
+output_path = './test/'
 
 cleaner = Cleaner(  reference = reference, 
                     paired_1 = paired_1,
@@ -12,4 +12,4 @@ cleaner = Cleaner(  reference = reference,
 )
 
 
-cleaner.call_bowtie()
+cleaner.process()
