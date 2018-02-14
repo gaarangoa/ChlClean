@@ -3,14 +3,14 @@
 This is a simple tool that removes all 16s rRNAs-like reads from a paired-end sample. By using Bowtie2 paired end reads are screened against the 16S-rRNAs from the greengenes database and removed from the samples. 
 
 ### Requirements
-
+Make sure you have installed the following software (packages):
     Bowtie2
-    BioPython
+    <!-- BioPython -->
 
 ### Instalation
 
     python setup.py install
-    pip install . --upgrade
+    <!-- pip install . --upgrade -->
 
 ### Usage
 
