@@ -25,10 +25,10 @@ class Cleaner():
         os.system(cmd)
         parse_sam(fi = self.bowtie_out_file, fo = self.bes)
 
-    def retrive(self, fi=''):
-        
-        for record in SeqIO.parse(open(fi), "fastq"):
-            
-            
+    def retrive(self, fi='', listf=''):
+        cmd = "filter_fasta.py -f "+self.paired_1+" "+self.paired_1.replace(".fastq","")+".no-chl.fastq -s "+listf+" -n"
+        os.system(cmd)
+        cmd = "filter_fasta.py -f "+self.paired_2+" "+self.paired_2.replace(".fastq","")+".no-chl.fastq -s "+listf+" -n"
+        os.system(cmd)
         
 

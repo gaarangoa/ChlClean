@@ -9,6 +9,13 @@ This is a simple tool that removes all 16s rRNAs-like reads from a paired-end sa
 
 ### Instalation
 
+#### Create a virtual environment
+virtualenv venv
+source ./venv/bin/activate
+
+pip install numpy
+pip install qiime
+
 ### Usage
 
 
